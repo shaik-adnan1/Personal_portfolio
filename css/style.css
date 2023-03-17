@@ -1,4 +1,3 @@
-
 /* Fonts: 
 
 Thicccc font: Climate Crisis -- link: https://fonts.google.com/specimen/Climate+Crisis
@@ -14,8 +13,60 @@ retro_gameStyle_font: Press Start 2P -- link: https://fonts.google.com/specimen/
 
 */
 
+/* Css grid */
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+.grid-item {
+  padding: 20px;
+  /* width: 100px; */
+  background-color: red;
+  border: 2px solid white;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  /* justify-content: end; */
+  /* grid-template-columns: 80px 200px auto 40px; */
+  /* grid-template-rows: 80px 200px; */
+}
+
+.item1 {
+  /* grid-column-start: 1;
+    grid-column-end: 3; */
+  /* grid-row-start: 1;
+    grid-row-end: 3;  when height of the element is fixed, grid-row-start/end doesn't work*/
+}
+
+/* grid item */
+
+/* Grid column */
+/* Grid row */
+/* .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+} */
+
+.item1 {
+  grid-row: 1 / span 2;
+}
 
 
 
