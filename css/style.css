@@ -16,11 +16,11 @@ retro_gameStyle_font: Press Start 2P -- link: https://fonts.google.com/specimen/
 /* Font imports */
 
 /* font thicc */
-@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap"); 
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap");
 
 /* font thin */
 /* @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
 
 /* Css grid */
 
@@ -77,17 +77,15 @@ retro_gameStyle_font: Press Start 2P -- link: https://fonts.google.com/specimen/
   grid-row: 1 / span 2;
 } */
 
-
-
 .flex-container {
-  display: grid; 
+  display: grid;
 
-   grid-template-rows: 1fr 1fr 1fr 1fr;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   
-   gap: 0px;
-   height: 80vh;
-   width: 100vw;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  gap: 0px;
+  height: 80vh;
+  width: 100vw;
 }
 /* 
 .home--containers {
@@ -96,27 +94,22 @@ retro_gameStyle_font: Press Start 2P -- link: https://fonts.google.com/specimen/
   text-transform: upp;
 } */
 
-
-
-
 #left_home--container {
   font-family: "Climate Crisis", cursive;
   width: 50%;
   background-color: #141212;
   color: #fff;
   font-size: 40px;
-   background-color: #000; 
-   grid-row-start: 1;
-   grid-column-start: 1;
+  background-color: #000;
+  grid-row-start: 1;
+  grid-column-start: 1;
 
-   grid-row-end: 5;
-   grid-column-end: 3;
+  grid-row-end: 5;
+  grid-column-end: 3;
   /* padding: 25px; */
 }
 
 #right_home--container {
   width: 50%;
-  font-family: 'Gruppo', cursive;
+  font-family: "Gruppo", cursive;
 }
-
-
