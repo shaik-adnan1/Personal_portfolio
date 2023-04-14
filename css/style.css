@@ -18,9 +18,29 @@ retro_gameStyle_font: Press Start 2P -- link: https://fonts.google.com/specimen/
 /* font thicc */
 @import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Pacifico&display=swap");
+/* font-family: 'Amatic SC', cursive; */
+/* font-family: 'Pacifico', cursive; */
+
 /* font thin */
 /* @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap'); */
 @import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+/* font-family: 'Rampart One', cursive; */
+
+/* Amatic SC */
+
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+/* font-family: 'Amatic SC', cursive; */
+
+/* Gruppo */
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+/* font-family: 'Gruppo', cursive; */
+
+/* tilt prism */
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+/* font-family: 'Tilt Prism', cursive; */
 
 /* Css grid */
 
@@ -29,87 +49,123 @@ retro_gameStyle_font: Press Start 2P -- link: https://fonts.google.com/specimen/
   margin: 0;
   box-sizing: border-box;
 }
-/* 
-.grid-item {
-  padding: 20px;
-  width: 100px;
-  background-color: red;
-  border: 2px solid white;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  gap: 10px;
-  background-color: #2196f3;
-  padding: 10px;
-  justify-content: end;
-  grid-template-columns: 80px 200px auto 40px;
-  grid-template-rows: 80px 200px;
-} */
 
-/* .item1 {
-  grid-column-start: 1;
-    grid-column-end: 3;
-  grid-row-start: 1;
-    grid-row-end: 3;  when height of the element is fixed, grid-row-start/end doesn't work
-} */
-
-/* grid item */
-
-/* Grid column */
-/* Grid row */
-/* .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+body {
+  padding: 16px;
+  background-image: url('../images/svg_haikei/circle-scatter-haikei\ \(2\).svg');
+  z-index: -1;
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-} */
-/* 
-.item1 {
-  grid-row: 1 / span 2;
-} */
+/* Home page styling */
 
-.flex-container {
+.homePage--container {
   display: grid;
-
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-
-  gap: 0px;
-  height: 80vh;
-  width: 100vw;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 95vh;
+  /* border: 2px solid black; */
+  border-radius: 15px;
+  background-color: #fff;
 }
-/* 
-.home--containers {
-  width: 100vh;
-  height: 90vh;
-  text-transform: upp;
-} */
 
-#left_home--container {
-  font-family: "Climate Crisis", cursive;
-  width: 50%;
-  background-color: #141212;
-  color: #fff;
-  font-size: 40px;
+/* setting up home grid */
+
+.intro_comp {
+  /* border: 1px solid red; */
+  text-transform: uppercase;
+}
+
+.intro_comp1 {
+  grid-area: 1 / 1 / 2 / 4;
+  border-top-left-radius: 10px;
+  /* font-family: 'Amatic SC', cursive; */
+  font-family: "Pacifico", cursive;
+  /* font-family: 'Rampart One', cursive; */
+  font-weight: bold;
+  font-size: 70px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.intro_comp2 {
+  grid-area: 2 / 1 / 3 / 2;
+  font-family: "Tilt Prism", cursive;
+
+  text-transform: capitalize;
+  font-size: 100px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.intro_comp3 {
+  grid-area: 2 / 2 / 4 / 3;
+  font-family: "Tilt Prism", cursive;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 50px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.intro_comp4 {
+  grid-area: 2 / 3 / 4 / 4;
+    font-family: "Tilt Prism", cursive;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 60px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.intro_comp5 {
+  grid-area: 4 / 1 / 5 / 4;
+  border-bottom-left-radius: 10px;
+  /* height: 50%;
+  bottom: 0; */
+  font-family: "Tilt Prism", cursive;
+  font-size: 100px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.intro_comp6 {
+  grid-area: 3 / 1 / 4 / 2;
+  
+}
+
+/* right grid */
+
+.intro_comp7 {
+  grid-area: 1 / 4 / 3 / 5;
+}
+.intro_comp8 {
+  grid-area: 1 / 5 / 2 / 7;
   background-color: #000;
-  grid-row-start: 1;
-  grid-column-start: 1;
-
-  grid-row-end: 5;
-  grid-column-end: 3;
-  /* padding: 25px; */
+  border-top-right-radius: 10px;
+}
+.intro_comp9 {
+  grid-area: 2 / 5 / 3 / 7;
+}
+.intro_comp10 {
+  grid-area: 3 / 4 / 4 / 7;
+  background-color: #000;
+}
+.intro_comp11 {
+  grid-area: 4 / 4 / 5 / 7;
+  border-bottom-right-radius: 10px;
 }
 
-#right_home--container {
-  width: 50%;
-  font-family: "Gruppo", cursive;
+
+/* Animations */
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
